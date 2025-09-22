@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<div class="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-8 text-center">
+  <h2 class="text-3xl font-bold mb-4">Notificaciones Locales</h2>
+  <p class="text-gray-600 mb-8">
+    Haz clic en "Permitir" para que tu aplicación pueda enviarte notificaciones. Luego, haz clic en
+    "Probar" para verla en acción.
+  </p>
+
+  <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-sm">
+    <h3 class="text-xl font-semibold mb-4">Estado del Permiso</h3>
+    <p class="mb-6 text-gray-700">
+      {{ getPermissionStatusText() }}
+    </p>
+    <div class="flex flex-col space-y-4">
+      <button
+        (click)="requestPermission()"
+        [disabled]="isPermissionRequested()"
+        class="w-full bg-blue-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        {{ isPermissionRequested() ? 'Permiso Solicitado' : 'Permitir Notificaciones' }}
+      </button>
+      <button
+        (click)="showNotification()"
+        [disabled]="permissionStatus() !== 'granted'"
+        class="w-full bg-green-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        Probar Notificación
+      </button>
+    </div>
+  </div>
+</div>
