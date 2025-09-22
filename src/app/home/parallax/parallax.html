@@ -1,49 +1,60 @@
-<!-- Parallax Background -->
+<!-- Fondo Parallax -->
 <section
-  class="flex flex-col w-full h-[500px] bg-cover bg-fixed bg-center flex justify-center items-center"
+  class="flex flex-col w-full h-[500px] bg-cover bg-fixed bg-center justify-center items-center relative"
   style="
     background-image: url(https://images.unsplash.com/photo-1642427749670-f20e2e76ed8c?auto=format&fit=crop&w=880&q=80);
   "
+  role="img"
+  aria-label="Fondo con efecto parallax"
 >
-  <h1 class="text-white text-5xl font-semibold mt-20 mb-10">This is Parallax Effect</h1>
+  <!-- Capa de superposición para mejorar el contraste del texto -->
+  <div class="absolute inset-0 bg-black opacity-50"></div>
 
-  <span class="text-center font-bold my-20 text-white/90">
-    <a
-      href="https://egoistdeveloper.github.io/twcss-to-sass-playground/"
-      target="_blank"
-      class="text-white/90 hover:text-white"
-    >
-      Convetert to SASS
-    </a>
+  <!-- Contenido del Parallax -->
+  <div class="relative z-10 flex flex-col justify-center items-center">
+    <!-- El encabezado <h2> es más apropiado para la jerarquía de la página -->
+    <h2 class="text-white text-5xl font-semibold mt-20 mb-10 text-center px-4">
+      Este es el Efecto Parallax
+    </h2>
 
-    <hr class="my-4" />
-
-    <a
-      href="https://unsplash.com/photos/8Pm_A-OHJGg"
-      target="_blank"
-      class="text-white/90 hover:text-white"
-    >
-      Image Source
-    </a>
-
-    <hr class="my-4" />
-
-    <p>
+    <span class="text-center font-bold my-20 text-white/90">
       <a
-        href="https://github.com/EgoistDeveloper/my-tailwind-components/blob/main/src/templates/parallax-landing-page.html"
+        href="https://egoistdeveloper.github.io/twcss-to-sass-playground/"
         target="_blank"
         class="text-white/90 hover:text-white"
       >
-        Source Code
+        Convetir a SASS
       </a>
-      |
+
+      <hr class="my-4" />
+
       <a
-        href="https://egoistdeveloper.github.io/my-tailwind-components/./src/templates/parallax-landing-page.html"
+        href="https://unsplash.com/photos/8Pm_A-OHJGg"
         target="_blank"
         class="text-white/90 hover:text-white"
       >
-        Full Preview
+        Fuente de la Imagen
       </a>
-    </p>
-  </span>
+
+      <hr class="my-4" />
+
+      <p>
+        <a
+          href="https://github.com/EgoistDeveloper/my-tailwind-components/blob/main/src/templates/parallax-landing-page.html"
+          target="_blank"
+          class="text-white/90 hover:text-white"
+        >
+          Código Fuente
+        </a>
+        |
+        <a
+          href="https://egoistdeveloper.github.io/my-tailwind-components/./src/templates/parallax-landing-page.html"
+          target="_blank"
+          class="text-white/90 hover:text-white"
+        >
+          Vista Previa Completa
+        </a>
+      </p>
+    </span>
+  </div>
 </section>
