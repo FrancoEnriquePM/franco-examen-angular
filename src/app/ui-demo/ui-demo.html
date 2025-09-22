@@ -1,0 +1,155 @@
+<div
+  class="bg-gray-50 dark:bg-gray-900 min-h-screen font-sans antialiased text-gray-900 dark:text-gray-50 flex flex-col items-center"
+>
+  <!-- Navbar de demostración -->
+  <app-navbar></app-navbar>
+  <br />
+  <br />
+  <!-- Contenedor principal de la página -->
+  <main class="container mx-auto p-8 lg:p-12">
+    <h1
+      class="text-4xl lg:text-5xl font-extrabold text-center mb-4 text-indigo-600 dark:text-indigo-400"
+    >
+      Galería de Componentes
+    </h1>
+    <p class="text-center text-gray-600 dark:text-gray-300 mb-12">
+      Una muestra de los componentes más utilizados con un diseño moderno y responsivo.
+    </p>
+
+    <!-- Sección de Tarjetas (Grid) -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-gray-100 text-center">
+        Tarjetas Responsivas
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Tarjeta 1 -->
+        <div
+          class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300"
+        >
+          <span
+            class="p-3 mb-4 rounded-full bg-indigo-100 dark:bg-indigo-900 text-indigo-600 dark:text-indigo-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-layout-panel-left"
+            >
+              <rect width="18" height="18" x="3" y="3" rx="2" />
+              <path d="M11 3v18" />
+            </svg>
+          </span>
+          <h3 class="text-xl font-bold mb-2">Diseño Modular</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Cada componente está diseñado de forma independiente, lo que facilita su reutilización y
+            mantenimiento en cualquier parte de la aplicación.
+          </p>
+        </div>
+        <!-- Tarjeta 2 -->
+        <div
+          class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300"
+        >
+          <span
+            class="p-3 mb-4 rounded-full bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-activity"
+            >
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+          </span>
+          <h3 class="text-xl font-bold mb-2">Rendimiento Óptimo</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Optimizado para una carga rápida y un rendimiento fluido, incluso en dispositivos con
+            recursos limitados.
+          </p>
+        </div>
+        <!-- Tarjeta 3 -->
+        <div
+          class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300"
+        >
+          <span
+            class="p-3 mb-4 rounded-full bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-palette"
+            >
+              <circle cx="13.5" cy="6.5" r=".5" />
+              <circle cx="17.5" cy="10.5" r=".5" />
+              <circle cx="8.5" cy="7.5" r=".5" />
+              <path
+                d="M4 13.5a14.5 14.5 0 0 0 16-2V8a2 2 0 0 0-2-2h-3.34a10 10 0 1 1-12.66 12.66c-.68-.68-.2-2.3 1.2-3.72a3.73 3.73 0 0 1-.5-3.52z"
+              />
+            </svg>
+          </span>
+          <h3 class="text-xl font-bold mb-2">Estilo Consistente</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            El diseño sigue una guía de estilo unificada para una apariencia profesional y cohesiva
+            en toda la aplicación.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Botones -->
+    <section class="text-center">
+      <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-gray-100">Botones de Acción</h2>
+      <div class="flex flex-wrap justify-center items-center gap-4">
+        <!-- Botón Principal -->
+        <button
+          class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+        >
+          Botón Primario
+        </button>
+        <!-- Botón Secundario -->
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-100 font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
+        >
+          Botón Secundario
+        </button>
+        <!-- Botón de Éxito -->
+        <button
+          class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2"
+        >
+          Botón de Éxito
+        </button>
+        <!-- Botón de Advertencia -->
+        <button
+          class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2"
+        >
+          Botón de Advertencia
+        </button>
+        <!-- Botón de Peligro -->
+        <button
+          class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2"
+        >
+          Botón de Peligro
+        </button>
+      </div>
+    </section>
+  </main>
+</div>
